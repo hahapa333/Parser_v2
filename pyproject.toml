@@ -1,0 +1,12 @@
+[tool.black]
+line-length = 88          # максимальная длина строки
+target-version = ['py39'] # версия Python проекта
+include = '\.pyi?$'       # включать все .py и .pyi файлы
+exclude = '''
+/(
+    \.git
+  | \.venv
+  | build
+  | dist
+)/
+'''
