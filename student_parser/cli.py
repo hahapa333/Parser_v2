@@ -9,7 +9,7 @@ from pathlib import Path
 from typing import List
 
 from .reader import read_csv_files
-from .reports import REPORTS
+from .reports import REPORTS, Report
 
 
 def main():
@@ -40,7 +40,7 @@ def main():
         return
 
     records = read_csv_files(args.files)
-    report = REPORTS[args.report]
+    report: Report = REPORTS[args.report]
     print(report.generate(records))
 
 

@@ -33,7 +33,7 @@ class Report(ABC):
             str: Сгенерированный отчет в виде строки.
         """
 
-    raise NotImplementedError("Метод generate должен быть реализован в подклассе")
+    pass
 
 
 class StudentPerformanceReport(Report):
